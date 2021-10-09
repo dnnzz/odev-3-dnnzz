@@ -1,0 +1,47 @@
+.header-title {
+  color: lightgrey;
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40vh;
+}
+
+.options-container h2 {
+  text-align: center;
+}
+
+.javascript {
+  display: relative;
+  width: 20%;
+  height: 100%;
+  background: #f0db4f url(./assets/logos/javascript-logo.svg) no-repeat center;
+  background-size: 150px 150px;
+}
+
+.go {
+  display: relative;
+  width: 20%;
+  height: 100%;
+  background: #29beb0 url(./assets/logos/golang-logo.svg) no-repeat center;
+  background-size: 150px 150px;
+}
+
+.ruby {
+  display: relative;
+  width: 20%;
+  height: 100%;
+  background: #a31116 url(./assets/logos/ruby-logo.svg) no-repeat center;
+  background-size: 150px 150px;
+}
+
+.cplus {
+  display: relative;
+  width: 20%;
+  height: 100%;
+  background: #4d8aba url(./assets/logos/c++-logo.svg) no-repeat center;
+  background-size: 150px 150px;
+}
