@@ -12,8 +12,8 @@ app.get("/", (req, res) => {
 const votes = {
   javascript: 0,
   go: 0,
-  php: 0,
-  c: 0,
+  ruby: 0,
+  cplus: 0,
 };
 
 io.on("connection", (socket) => {
