@@ -4,7 +4,7 @@ const http = require("http");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-
+const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.end("realtime colors app");
 });
@@ -30,6 +30,6 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => console.log("a user disconnected"));
 });
 
-server.listen(3000, () => {
+server.listen(port, "0.0.0.0", () => {
   console.log("listening on *:3000");
 });
