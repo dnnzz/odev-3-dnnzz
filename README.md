@@ -1,3 +1,8 @@
+## Uygulama
+
+Reactjs ve socket io kullanılarak geliştirilmiş bir gerçek zamanlı oylama uygulaması.
+
+
 ## Gereksinimler
 
 - [X] Ekranda bir tane soru olmalı ve web sayfasına girenler oylama yapabilmeli.
