@@ -4,10 +4,7 @@ const http = require("http");
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://hb-voting-app-backend.herokuapp.com",
-    methods: ["GET", "POST"],
-    allowedHeaders: ["my-custom-header"],
-    credentials: true,
+    origin: "*",
   },
 });
 require("dotenv").config();
