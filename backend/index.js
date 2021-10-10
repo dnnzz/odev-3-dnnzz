@@ -4,10 +4,12 @@ const http = require("http");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
+require("dotenv").config();
 const port = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.end("realtime colors app");
 });
+console.log(process.env.PORT);
 
 const votes = {
   javascript: 0,
